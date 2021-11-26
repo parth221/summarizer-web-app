@@ -1,0 +1,445 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Text Summarizer | Homepage</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}"  rel="stylesheet">
+<link href="{% static 'css/main.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="" title=""></a></div>
+                    </div>
+
+                   	<div class="nav-outer clearfix">
+
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li><a href="{% url 'index' %}">Home</a></li>
+								<li><a href="{% url 'index' %}">About Us</a></li>
+								<li><a href="{% url 'services_1' %}">Services</a></li>
+								<li><a href="{% url 'result_1' %}">Result</a></li>
+								<li><a href="{% url 'index' %}">Contact us</a></li>
+								</ul>
+							</div>
+
+						</nav>
+
+						<div class="outer-box">
+							<!--Nav Toggler-->
+							<div class="nav-toggler"><div class="nav-btn"><span class="flaticon-menu"></span></div></div>
+						</div>
+
+					</div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+		<!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="index.html" class="img-responsive"><img src="{% static 'images/logo-small.png' %}" alt="" title=""></a>
+                </div>
+
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                            <ul class="navigation clearfix">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+								<li><a href="{% url 'index' %}">About Us</a></li>
+								<li><a href="{% url 'services_1' %}">Services</a></li>
+								<li><a href="{% url 'result_1' %}">Result</a></li>
+								<li><a href="{% url 'index' %}">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+
+            </div>
+        </div>
+        <!--End Sticky Header-->
+
+    </header>
+    <!--End Main Header -->
+
+	<!--Banner Section-->
+    <section class="banner-section" id="home-banner" style="background-image:url({% static 'images/background/13.png' %})">
+		<div class="auto-container">
+			<div class="clearfix">
+				<div class="content">
+					<h1>Text  <br> Summarizer</h1>
+					<div class="text">Get a concise summary of your large document <br> Within few minutes.</div>
+					<a href="{% url 'services_1' %}" class="theme-btn btn-style-one">Get Started</a>
+				</div>
+				<div class="image-box">
+					<figure class="image">
+						<img src="{% static 'images/resource/1.png' %}" alt="">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Banner Section-->
+
+	<!-- Services Section -->
+    <section class="services-section">
+		<div class="auto-container">
+
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<div class="title"> <h3>Free of cost </h3></div>
+				<h2>Get the most <br> out of your <span>data</span></h2>
+			</div>
+
+			<div class="row clearfix">
+
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/resource/service-1.png' %}" alt="" /></span>
+						</div>
+						<h5><a href="services-single.html">More efficient than <br> all other open source platforms</a></h5>
+						<div class="text">We use a customized application specifically designed using Neural Networks to summarize your data.</div>
+						<a href="services-single.html" class="plus-box fa fa-plus"></a>
+					</div>
+				</div>
+
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/resource/service-2.png' %}" alt="" /></span>
+						</div>
+						<h5><a href="services-single.html">User Friendly and <br> Optimized</a></h5>
+						<div class="text">Our platform can be used with ease by anyone to gain a competitive edge.</div>
+						<a href="services-single.html" class="plus-box fa fa-plus"></a>
+					</div>
+				</div>
+
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon"><img src="{% static 'images/resource/service-3.png' %}" alt="" /></span>
+						</div>
+						<h5><a href="services-single.html">Super Fast and <br> Secure</a></h5>
+						<div class="text">Our Neural networks model summarizes data needs only few minutes to summarize the data.</div>
+						<a href="services-single.html" class="plus-box fa fa-plus"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section -->
+
+
+	<!-- Team Section -->
+	<section class="team-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<div class="title"><h2><span>Our team </span> </h2></div>
+
+			</div>
+
+			<div class="row clearfix">
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static 'images/resource/team-1.jpg' %}" alt="" />
+						</div>
+						<h5>Parth Pandya</h5>
+						<div class="designation">Machine Learning Engineer</div>
+						<ul class="social-nav">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="#" class="fa fa-behance"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static 'images/resource/team-2.jpg' %}" alt="" />
+						</div>
+						<h5>Suraj Nagaraj</h5>
+						<div class="designation">Machine Learning Engineer</div>
+						<ul class="social-nav">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="#" class="fa fa-behance"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static 'images/resource/team-3.jpg' %}" alt="" />
+						</div>
+						<h5>Jiby Mathew</h5>
+						<div class="designation">Machine Learning Engineer</div>
+						<ul class="social-nav">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="#" class="fa fa-behance"></a></li>
+						</ul>
+					</div>
+				</div>
+        <!-- Team Block -->
+        <div class="team-block col-lg-3 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="{% static 'images/resource/team-4.jpg' %}" alt="" />
+            </div>
+            <h5>Shivani Pandey</h5>
+            <div class="designation">Machine Learning Engineer</div>
+            <ul class="social-nav">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-behance"></a></li>
+            </ul>
+          </div>
+        </div>
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static 'images/resource/team-5.jpg' %}" alt="" />
+						</div>
+						<h5>Shilpa Thomas</h5>
+						<div class="designation">Machine Learning Engineer</div>
+						<ul class="social-nav">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="#" class="fa fa-behance"></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- End Team Section -->
+
+
+	<!-- Contact Form Box -->
+	<section class="contact-form-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="icons-one"></div>
+				<div class="icons-two"></div>
+				<h3>Have any job for our company? <br> Just connect with us.</h3>
+
+				<!-- Default Form -->
+				<div class="default-form">
+					<form method="post" action="blog.html">
+						<div class="row clearfix">
+
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="text" name="username" placeholder="Your name *" required>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="email" name="email" placeholder="Your email *" required>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+								<input type="text" name="subject" placeholder="Subject *" required>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+								<textarea name="message" placeholder="Message *"></textarea>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
+								<button class="theme-btn btn-style-one" type="submit" name="submit-form">Contact with us</button>
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+				<!--End Default Form -->
+				<div class="side-image wow rubberBand" data-wow-delay="0ms" data-wow-duration="1500ms">
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Form Box -->
+
+	<!--Main Footer-->
+    <footer class="main-footer">
+    	<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+
+                    <!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+
+                        	<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+										<a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt="" /></a>
+									</div>
+									<div class="text"></div>
+									<ul class="list-style-one">
+										<li><span class="icon fa fa-phone"></span> +123 (4567) 890</li>
+										<li><span class="icon fa fa-envelope"></span> textsummarizer@gmail.com </li>
+										<li><span class="icon fa fa-home"></span>265 Yorkland Blvd #400 <br> North York, ON M2J 1S5, Toronto, Canada</li>
+									</ul>
+								</div>
+							</div>
+
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h4>Links</h4>
+									<ul class="list-link">
+										<li><a href="{% url 'index' %}">Home</a></li>
+										<li><a href="{% url 'services_1' %}">Services</a></li>
+										<li><a href="#">About us</a></li>
+
+
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+
+                        	<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h4>Support</h4>
+									<ul class="list-link">
+										<li><a href="">Contact Us</a></li>
+										<li><a href="">Submit a Ticket</a></li>
+										<li><a href="">Visit Knowledge Base</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<!--Footer Column-->
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+
+						<!-- Copyright Column -->
+
+
+						<!-- Social Column -->
+						<div class="social-column col-lg-6 col-md-6 col-sm-12">
+							<ul>
+								<li class="follow">Follow us: </li>
+								<li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+								<li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
+								<li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
+								<li><a href="#"><span class="fa fa-google-plus-square"></span></a></li>
+								<li><a href="#"><span class="fa fa-rss-square"></span></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
